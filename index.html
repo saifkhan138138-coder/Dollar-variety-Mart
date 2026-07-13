@@ -1,56 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dollar Variety Mart</title>
 
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
 font-family:Arial,sans-serif;
 background:#f5f5f5;
-text-align:center;
 }
+
 header{
 background:#d60000;
 color:white;
+text-align:center;
 padding:20px;
 }
-h1{
-margin:0;
-}
+
 .hero{
 padding:40px 20px;
+text-align:center;
+background:white;
 }
+
+.hero h2{
+margin-bottom:15px;
+}
+
+.hero p{
+margin:10px 0;
+}
+
 .button{
 display:inline-block;
-padding:12px 20px;
+padding:12px 22px;
 background:#25D366;
 color:white;
 text-decoration:none;
 border-radius:8px;
+margin-top:15px;
 font-weight:bold;
 }
-footer{
-background:#222;
-color:white;
+
+.products{
+padding:30px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.card{
+background:white;
+width:160px;
 padding:15px;
-margin-top:30px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.15);
 }
 </style>
 </head>
-<section style="background:#222;color:white;padding:30px;text-align:center;">
-<h2>Contact Us</h2>
-<p>📍 Dollar Variety Mart, Sillanwali</p>
-<p>📞 0301-6708194</p>
-<p>⏰ Open Daily</p>
 
-<a href="https://wa.me/923016708194"
-style="background:#25D366;color:white;padding:12px 20px;text-decoration:none;border-radius:8px;">
-WhatsApp Order
-</a>
-</section>
 <body>
 
 <header>
@@ -58,53 +78,18 @@ WhatsApp Order
 <p>Sillanwali</p>
 </header>
 
-<div<h3>🛍️ Everything You Need in One Place</h3>
-
-<p>
-✔ Toys<br>
-✔ Kitchen Items<br>
-✔ Cosmetics<br>
-✔ Jewellery<br>
-✔ Plastic & Ceramic<br>
-✔ Gifts & More
-
+<section class="hero">
 <h2>Welcome to Dollar Variety Mart</h2>
-<p>Best Quality Products at Affordable Prices</p>
+
+<p>Everything You Need in One Place</p>
 
 <a class="button" href="https://wa.me/923016708194">
 Order on WhatsApp
 </a>
-</div>
 
-<footer>
-© 2026 Dollar Variety Mart<section style="padding:30px;background:#fff;">
+</section>
+
+<section class="products">
 <h2>Our Products</h2>
 
-<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:15px;">
-
-<div style="border:1px solid #ddd;padding:15px;width:150px;border-radius:10px;">
-<h3>🧸 Toys</h3>
-<p>Best Quality Toys</p>
-</div>
-
-<div style="border:1px solid #ddd;padding:15px;width:150px;border-radius:10px;">
-<h3>🍽 Kitchen</h3>
-<p>Kitchen Accessories</p>
-</div>
-
-<div style="border:1px solid #ddd;padding:15px;width:150px;border-radius:10px;">
-<h3>💄 Cosmetics</h3>
-<p>Beauty Products</p>
-</div>
-
-<div style="border:1px solid #ddd;padding:15px;width:150px;border-radius:10px;">
-<h3>💍 Jewellery</h3>
-<p>Fashion Collection</p>
-</div>
-
-</div>
-</section>
-</footer>
-
-</body>
-</html>
+<div class="cards">
