@@ -185,7 +185,34 @@ WhatsApp Order
 
 <a class="float" href="https://wa.me/923016708194?text=Assalam-o-Alaikum%20order%20karna%20hai">
 💬 WhatsApp
-</a>
+</a><script>
+const wa = document.querySelector(".float");
+
+let isDragging = false;
+let offsetX = 0;
+let offsetY = 0;
+
+wa.addEventListener("touchstart", function(e){
+  isDragging = true;
+  offsetX = e.touches[0].clientX - wa.offsetLeft;
+  offsetY = e.touches[0].clientY - wa.offsetTop;
+});
+
+document.addEventListener("touchmove", function(e){
+  if(!isDragging) return;
+
+  e.preventDefault();
+
+  wa.style.left = (e.touches[0].clientX - offsetX) + "px";
+  wa.style.top = (e.touches[0].clientY - offsetY) + "px";
+  wa.style.right = "auto";
+  wa.style.bottom = "auto";
+});
+
+document.addEventListener("touchend", function(){
+  isDragging = false;
+});
+</script>
 
 
 </body>
